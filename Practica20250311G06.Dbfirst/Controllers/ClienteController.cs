@@ -33,7 +33,7 @@ namespace Practica20250311G06.Dbfirst.Controllers
             }
 
             var cliente = await _context.Clientes
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(x => x.Id == id);
             if (cliente == null)
             {
                 return NotFound();
